@@ -24,19 +24,18 @@
 					</archive>
 				</configuration>
 			</plugin>
-			
-		
-   
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.6.1</version>
-        <configuration>
-          <systemPropertyVariables>
-            <data>firefox</data>
-          </systemPropertyVariables>
-        </configuration>
-      </plugin>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<systemPropertyVariables>
+						<data>firefox</data>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
 
 		</plugins>
 	</build>
@@ -49,6 +48,16 @@
 	</properties>
 
 	<dependencies>
+
+		<!-- Source: https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.22.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+
 		<!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
