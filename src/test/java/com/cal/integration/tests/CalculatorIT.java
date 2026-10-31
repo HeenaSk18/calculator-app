@@ -12,20 +12,26 @@ import org.testng.annotations.Test;
 
 import com.cal.Calculator;
 
-
 public class CalculatorIT {
 
 //	Just dump the result of each operation into a file 
 //	We will cross check if the file is getting created (Assertion)
 //	Cross Check if the right content is written in the file (Assertion)
-	@Test
-	public void calculatorIntergrationTest() throws IOException {
-		Calculator cal = new Calculator();
+	Calculator cal;
+	File outputFile;
+
+	public void setup() {
+		cal = new Calculator();
 		File outputDir = new File("target/integrationTest");
-		if(!outputDir.exists()) {
+		if (!outputDir.exists()) {
 			outputDir.mkdir();
 		}
-		File outputFile = new File(outputDir,"intergrationResult.txt");
+		outputFile = new File(outputDir, "intergrationResult.txt");
+
+	}
+
+	@Test
+	public void calculatorIntergrationTest() throws IOException {
 
 //		File outputFile = new File("intergrationResult.txt");
 
@@ -35,15 +41,14 @@ public class CalculatorIT {
 		double divResult = cal.divide(20, 5);
 
 		List<String> lines = Arrays.asList(addResult + "", subResult + "", mulResult + "", divResult + "");
-
+		
 		FileUtils.writeLines(outputFile, lines);
 		Assert.assertTrue(outputFile.exists(), "integrationResult.txt should be present");
 
-		List<String> actualLines=FileUtils.readLines(outputFile, StandardCharsets.UTF_8);
-		
-		Assert.assertEquals(actualLines, lines," Mismatch found in the file"); //comparing the 2 lists AssertEquals
-		
-		
+		List<String> actualLines = FileUtils.readLines(outputFile, StandardCharsets.UTF_8);
+
+		Assert.assertEquals(actualLines, lines, " Mismatch found in the file"); // comparing the 2 lists AssertEquals
+
 	}
 
 }
