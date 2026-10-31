@@ -7,7 +7,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Calculator Application Heena</name>
 	<description>Simple Java Calculator created by Teach with Jatin</description>
-
 	<build>
 		<finalName>Calculator App</finalName>
 		<plugins>
@@ -24,8 +23,6 @@
 					</archive>
 				</configuration>
 			</plugin>
-
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -36,35 +33,71 @@
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
-
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>3.5.3</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.owasp</groupId>
+				<artifactId>dependency-check-maven</artifactId>
+				<version>13.0.0</version>
+				<configuration>
+					<!--  Do not fail the build if the NVD update fails
+					(bad/missing API key, network, etc.)  -->
+					<failOnError>false</failOnError>
+					<!-- 
+					  Once you have a real, ACTIVATED key from
+					  https://nvd.nist.gov/developers/request-an-api-key
+					  uncomment the line below and paste the key.
+					  Do not commit the key to Git.
+					 -->
+					<!--  <nvdApiKey>PASTE-YOUR-REAL-KEY-HERE</nvdApiKey>  -->
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
-
-
 	<properties>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
-
 	</properties>
-
 	<dependencies>
-
-		<!-- Source: https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<!--  Source: https://mvnrepository.com/artifact/commons-io/commons-io  -->
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.22.0</version>
 			<scope>compile</scope>
 		</dependency>
-
-
-		<!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
+		<!--  Source: https://mvnrepository.com/artifact/org.testng/testng  -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.12.0</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- Source:
+		https://mvnrepository.com/artifact/commons-collections/commons-collections -->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.2</version>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
-
 </project>

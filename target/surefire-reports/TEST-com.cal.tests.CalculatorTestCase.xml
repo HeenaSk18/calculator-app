@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.cal.tests.CalculatorTestCase" time="0.099" tests="5" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.cal.tests.CalculatorTestCase" time="0.034" tests="5" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="data" value="firefox"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Heena\eclipse-workspace\calculator-app\target\test-classes;C:\Users\Heena\eclipse-workspace\calculator-app\target\classes;C:\Users\Heena\.m2\repository\commons-io\commons-io\2.22.0\commons-io-2.22.0.jar;C:\Users\Heena\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Heena\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Heena\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Heena\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar"/>
+    <property name="java.class.path" value="C:\Users\Heena\eclipse-workspace\calculator-app\target\test-classes;C:\Users\Heena\eclipse-workspace\calculator-app\target\classes;C:\Users\Heena\.m2\repository\commons-io\commons-io\2.22.0\commons-io-2.22.0.jar;C:\Users\Heena\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Heena\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Heena\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Heena\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Heena\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.12.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Heena\AppData\Local\Temp\surefire3771220889750941996\surefirebooter-20261031111029441_3.jar C:\Users\Heena\AppData\Local\Temp\surefire3771220889750941996 2026-10-31T11-10-28_997-jvmRun1 surefire-20261031111029441_1tmp surefire_0-20261031111029441_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Heena\AppData\Local\Temp\surefire12736833975973578896\surefirebooter-20261031123705493_3.jar C:\Users\Heena\AppData\Local\Temp\surefire12736833975973578896 2026-10-31T12-37-05_155-jvmRun1 surefire-20261031123705493_1tmp surefire_0-20261031123705493_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Heena\eclipse-workspace\calculator-app\target\test-classes;C:\Users\Heena\eclipse-workspace\calculator-app\target\classes;C:\Users\Heena\.m2\repository\commons-io\commons-io\2.22.0\commons-io-2.22.0.jar;C:\Users\Heena\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Heena\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Heena\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Heena\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar"/>
+    <property name="surefire.test.class.path" value="C:\Users\Heena\eclipse-workspace\calculator-app\target\test-classes;C:\Users\Heena\eclipse-workspace\calculator-app\target\classes;C:\Users\Heena\.m2\repository\commons-io\commons-io\2.22.0\commons-io-2.22.0.jar;C:\Users\Heena\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Heena\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Heena\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Heena\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Heena\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Heena"/>
     <property name="user.language" value="en"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Heena\AppData\Local\Temp\surefire3771220889750941996\surefirebooter-20261031111029441_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Heena\AppData\Local\Temp\surefire12736833975973578896\surefirebooter-20261031123705493_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-LTS-4"/>
@@ -59,18 +59,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="add_TwoIntegerNumbers_returnReuslt" classname="com.cal.tests.CalculatorTestCase" time="0.058">
+  <testcase name="add_TwoIntegerNumbers_returnReuslt" classname="com.cal.tests.CalculatorTestCase" time="0.004">
     <system-out><![CDATA[Number One 20.0
 Number Two 20.0
 20.0 + 20.0
 ]]></system-out>
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-]]></system-err>
   </testcase>
-  <testcase name="div_DivideNumberByZero_throwArithmeticException" classname="com.cal.tests.CalculatorTestCase" time="0.005"/>
-  <testcase name="div_TwoIntegerNumbers_returnReuslt" classname="com.cal.tests.CalculatorTestCase" time="0.006">
+  <testcase name="div_DivideNumberByZero_throwArithmeticException" classname="com.cal.tests.CalculatorTestCase" time="0.003"/>
+  <testcase name="div_TwoIntegerNumbers_returnReuslt" classname="com.cal.tests.CalculatorTestCase" time="0.004">
     <system-out><![CDATA[Number One 20.0
 Number Two 10.0
 20.0 / 10.0
@@ -82,7 +78,7 @@ Number Two 10.0
 20.0 * 10.0
 ]]></system-out>
   </testcase>
-  <testcase name="sub_TwoIntegerNumbers_returnReuslt" classname="com.cal.tests.CalculatorTestCase" time="0.007">
+  <testcase name="sub_TwoIntegerNumbers_returnReuslt" classname="com.cal.tests.CalculatorTestCase" time="0.004">
     <system-out><![CDATA[Number One 20.0
 Number Two 10.0
 20.0 + 10.0
