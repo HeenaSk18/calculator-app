@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.cal.Calculator;
@@ -19,7 +20,8 @@ public class CalculatorIT {
 //	Cross Check if the right content is written in the file (Assertion)
 	Calculator cal;
 	File outputFile;
-
+	
+	@BeforeClass(description = "Setup the Cal object and the artifact folder ")
 	public void setup() {
 		cal = new Calculator();
 		File outputDir = new File("target/integrationTest");
@@ -30,7 +32,7 @@ public class CalculatorIT {
 
 	}
 
-	@Test
+	@Test(description = "Verify outfile is created and the content matches as expected",groups= {"integration"})
 	public void calculatorIntergrationTest() throws IOException {
 
 //		File outputFile = new File("intergrationResult.txt");
