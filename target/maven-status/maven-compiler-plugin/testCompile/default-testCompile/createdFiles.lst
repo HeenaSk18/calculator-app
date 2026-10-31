@@ -1,5 +1,6 @@
-com\cal\test\Calculator2Test.class
-com\cal\test\CalculatorTestCase.class
-com\cal\test\CalculatorTests.class
-com\cal\test\CalculatorTest.class
-com\cal\test\DemoIT.class
+com\cal\tests\CalculatorTest.class
+com\cal\tests\Calculator2Test.class
+com\cal\tests\CalculatorTestCase.class
+com\cal\integration\tests\CalculatorIT.class
+com\cal\tests\CalculatorTests.class
+com\cal\tests\DemoIT.class

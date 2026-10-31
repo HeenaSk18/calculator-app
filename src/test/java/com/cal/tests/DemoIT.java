@@ -1,4 +1,4 @@
-package com.cal.test;
+package com.cal.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

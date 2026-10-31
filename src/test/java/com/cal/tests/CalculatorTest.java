@@ -1,4 +1,4 @@
-package com.cal.test;
+package com.cal.tests;
 
 import static org.testng.Assert.*;
 import static org.testng.Assert.assertEquals;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.cal.Calculator;
 
-public class CalculatorTestCase {
+public class CalculatorTest {
 	private Calculator cal = new Calculator(); //instance variable
 
 	

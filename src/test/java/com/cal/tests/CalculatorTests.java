@@ -1,4 +1,4 @@
-package com.cal.test;
+package com.cal.tests;
 
 import static org.testng.Assert.*;
 import static org.testng.Assert.assertEquals;
