@@ -684,8 +684,8 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
                 Scan Information (<a href="#" title="Click to toggle display" id="scanInformationToggle">show all</a>):<br/>
                     <ul class="indent">
                         <li><i>dependency-check version</i>: 13.0.0</li>
-                        <li><i>Report Generated On</i>: Sat, 31 Oct 2026 12:37:20 +0530</li>
-                        <li><i>Dependencies Scanned</i>:&nbsp;2 (2 unique)</li>
+                        <li><i>Report Generated On</i>: Sat, 31 Oct 2026 17:30:41 +0530</li>
+                        <li><i>Dependencies Scanned</i>:&nbsp;1 (1 unique)</li>
                         <li><i>Vulnerable Dependencies</i>:&nbsp;<span id="vulnerableCount">0</span></li>
                         <li><i>Vulnerabilities Found</i>:&nbsp;0</li>
                         <li><i>Vulnerabilities Suppressed</i>:&nbsp;0
@@ -738,11 +738,11 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
         
         
         
-        <h4 id="header2" class="subsectionheader expandable expandablesubsection white">Invalid API Key, length of 0 too short to provided a masked partial key</h4>
+        <h4 id="header2" class="subsectionheader expandable expandablesubsection white">NVD Returned Status Code: 503</h4>
         <div id="content2" class="subsectioncontent standardsubsection hidden">
-        <b>cause</b>: io.github.jeremylong.openvulnerability.client.nvd.NvdApiException: Invalid API Key, length of 0 too short to provided a masked partial key
+        <b>cause</b>: io.github.jeremylong.openvulnerability.client.nvd.NvdApiException: NVD Returned Status Code: 503
             <pre>
-                io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient._next(NvdCveClient.java:436)<br/>
+                io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient._next(NvdCveClient.java:445)<br/>
                 io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient.next(NvdCveClient.java:356)<br/>
                 org.owasp.dependencycheck.data.update.NvdApiDataSource.processApi(NvdApiDataSource.java:343)<br/>
                 org.owasp.dependencycheck.data.update.NvdApiDataSource.update(NvdApiDataSource.java:128)<br/>
@@ -793,20 +793,7 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
                         <th class="sortable" data-sort="int"    title="The count of evidence collected to identify the CPE">Evidence&nbsp;Count</th>
                     </tr></thead>
                     <tr class="notvulnerable">
-                        <td data-sort-value="COMMONS-COLLECTIONS-3.2.2.JAR"><a href="#l1_8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5">commons-collections-3.2.2.jar</a></td>
-                        <td data-sort-value="cpe:2.3:a:apache:commons_collections:3.2.2:*:*:*:*:*:*:*">
-                                <a href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aapache%3Acommons_collections%3A3.2.2%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A" target="_blank">cpe:2.3:a:apache:commons_collections:3.2.2:*:*:*:*:*:*:*</a>
-                        </td>
-                        <td data-sort-value="pkg:maven/commons-collections/commons-collections@3.2.2">
-                                pkg:maven/commons-collections/commons-collections@3.2.2
-</td>
-                        <td data-sort-value="-10">&nbsp;</td>
-                        <td>0</td>
-                        <td data-sort-value="0">Highest</td>
-                        <td>84</td>
-                    </tr>
-                    <tr class="notvulnerable">
-                        <td data-sort-value="COMMONS-IO-2.22.0.JAR"><a href="#l2_5b1e18bc0ad651ed878029d83f88d9c8189fd51e">commons-io-2.22.0.jar</a></td>
+                        <td data-sort-value="COMMONS-IO-2.22.0.JAR"><a href="#l1_5b1e18bc0ad651ed878029d83f88d9c8189fd51e">commons-io-2.22.0.jar</a></td>
                         <td data-sort-value="cpe:2.3:a:apache:commons_io:2.22.0:*:*:*:*:*:*:*">
                                 <a href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aapache%3Acommons_io%3A2.22.0%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A" target="_blank">cpe:2.3:a:apache:commons_io:2.22.0:*:*:*:*:*:*:*</a>
                         </td>
@@ -820,122 +807,7 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
                     </tr>
                 </table>
                 <h2 id="header-dependencies">Dependencies (vulnerable)</h2>
-                     <h3 class="subsectionheader standardsubsection notvulnerable"><a name="l1_8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5"></a>commons-collections-3.2.2.jar</h3>
-                    <div class="subsectioncontent notvulnerable">
-                            <p><b>Description:</b><pre>Types that extend and augment the Java Collections Framework.</pre></p>
-                        <p>
-                            <b>License:</b><pre class="indent"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">http://www.apache.org/licenses/LICENSE-2.0.txt</a></pre>
-                            <b>File&nbsp;Path:</b>&nbsp;C:\Users\Heena\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar<br/>
-                            <b>MD5:</b>&nbsp;f54a8510f834a1a57166970bfc982e94<br/>
-                            <b>SHA1:</b>&nbsp;8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5<br/>
-                            <b>SHA256:</b>eeeae917917144a68a741d4c0dff66aa5c5c5fd85593ff217bced3fc8ca783b8
-                                <br/><b>Referenced In Project/Scope:</b> Calculator Application Heena:compile
-                                <br/><span class="tooltip"><span class="tooltiptext">commons-collections-3.2.2.jar is in the transitive dependency tree of the listed items.</span><b>Included by:</b></span> pkg:maven/com.techwithjatin/calculator-app@0.0.1-SNAPSHOT
-                        </p>
-                        <h4 id="header3" class="subsectionheader expandable expandablesubsection white">Evidence</h4>
-                        <div id="content3" class="subsectioncontent standardsubsection hidden">
-                            <table class="lined fullwidth" border="0">
-                                <tr><th class="left" style="width:10%;">Type</th><th class="left" style="width:10%;">Source</th><th class="left" style="width:20%;">Name</th><th class="left" style="width:50%;">Value</th><th class="left" style="width:10%;">Confidence</th></tr>
-                                    <tr><td>Vendor</td><td>file</td><td>name</td><td>commons-collections</td><td>High</td></tr>
-                                    <tr><td>Vendor</td><td>jar</td><td>package name</td><td>apache</td><td>Highest</td></tr>
-                                    <tr><td>Vendor</td><td>jar</td><td>package name</td><td>collections</td><td>Highest</td></tr>
-                                    <tr><td>Vendor</td><td>jar</td><td>package name</td><td>commons</td><td>Highest</td></tr>
-                                    <tr><td>Vendor</td><td>Manifest</td><td>bundle-docurl</td><td>http://commons.apache.org/collections/</td><td>Low</td></tr>
-                                    <tr><td>Vendor</td><td>Manifest</td><td>bundle-symbolicname</td><td>org.apache.commons.collections</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>Manifest</td><td>implementation-build</td><td>tags/COLLECTIONS_3_2_2_RC3@r1714131; 2015-11-13 00:09:45+0100</td><td>Low</td></tr>
-                                    <tr><td>Vendor</td><td>Manifest</td><td>implementation-url</td><td>http://commons.apache.org/collections/</td><td>Low</td></tr>
-                                    <tr><td>Vendor</td><td>Manifest</td><td>Implementation-Vendor</td><td>The Apache Software Foundation</td><td>High</td></tr>
-                                    <tr><td>Vendor</td><td>Manifest</td><td>Implementation-Vendor-Id</td><td>org.apache</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>Manifest</td><td>specification-vendor</td><td>The Apache Software Foundation</td><td>Low</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>artifactid</td><td>commons-collections</td><td>Highest</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>artifactid</td><td>commons-collections</td><td>Low</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>amamment</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>bayard</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>craigmcc</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>geirm</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>jcarman</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>matth</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>morgand</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>psteitz</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>rdonkin</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>rwaldhoff</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer id</td><td>scolebourne</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Arun M. Thomas</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Craig McClanahan</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Geir Magnusson</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Henri Yandell</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>James Carman</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Matthew Hawthorne</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Morgan Delagrange</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Phil Steitz</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Robert Burrell Donkin</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Rodney Waldhoff</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>developer name</td><td>Stephen Colebourne</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>groupid</td><td>commons-collections</td><td>Highest</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>name</td><td>Apache Commons Collections</td><td>High</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>parent-artifactid</td><td>commons-parent</td><td>Low</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>parent-groupid</td><td>org.apache.commons</td><td>Medium</td></tr>
-                                    <tr><td>Vendor</td><td>pom</td><td>url</td><td>http://commons.apache.org/collections/</td><td>Highest</td></tr>
-                                    <tr><td>Product</td><td>file</td><td>name</td><td>commons-collections</td><td>High</td></tr>
-                                    <tr><td>Product</td><td>jar</td><td>package name</td><td>apache</td><td>Highest</td></tr>
-                                    <tr><td>Product</td><td>jar</td><td>package name</td><td>collections</td><td>Highest</td></tr>
-                                    <tr><td>Product</td><td>jar</td><td>package name</td><td>commons</td><td>Highest</td></tr>
-                                    <tr><td>Product</td><td>Manifest</td><td>bundle-docurl</td><td>http://commons.apache.org/collections/</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>Manifest</td><td>Bundle-Name</td><td>Apache Commons Collections</td><td>Medium</td></tr>
-                                    <tr><td>Product</td><td>Manifest</td><td>bundle-symbolicname</td><td>org.apache.commons.collections</td><td>Medium</td></tr>
-                                    <tr><td>Product</td><td>Manifest</td><td>implementation-build</td><td>tags/COLLECTIONS_3_2_2_RC3@r1714131; 2015-11-13 00:09:45+0100</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>Manifest</td><td>Implementation-Title</td><td>Apache Commons Collections</td><td>High</td></tr>
-                                    <tr><td>Product</td><td>Manifest</td><td>implementation-url</td><td>http://commons.apache.org/collections/</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>Manifest</td><td>specification-title</td><td>Apache Commons Collections</td><td>Medium</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>artifactid</td><td>commons-collections</td><td>Highest</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>amamment</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>bayard</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>craigmcc</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>geirm</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>jcarman</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>matth</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>morgand</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>psteitz</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>rdonkin</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>rwaldhoff</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer id</td><td>scolebourne</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Arun M. Thomas</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Craig McClanahan</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Geir Magnusson</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Henri Yandell</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>James Carman</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Matthew Hawthorne</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Morgan Delagrange</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Phil Steitz</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Robert Burrell Donkin</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Rodney Waldhoff</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>developer name</td><td>Stephen Colebourne</td><td>Low</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>groupid</td><td>commons-collections</td><td>Highest</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>name</td><td>Apache Commons Collections</td><td>High</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>parent-artifactid</td><td>commons-parent</td><td>Medium</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>parent-groupid</td><td>org.apache.commons</td><td>Medium</td></tr>
-                                    <tr><td>Product</td><td>pom</td><td>url</td><td>http://commons.apache.org/collections/</td><td>Medium</td></tr>
-                                    <tr><td>Version</td><td>file</td><td>version</td><td>3.2.2</td><td>High</td></tr>
-                                    <tr><td>Version</td><td>Manifest</td><td>Bundle-Version</td><td>3.2.2</td><td>High</td></tr>
-                                    <tr><td>Version</td><td>Manifest</td><td>Implementation-Version</td><td>3.2.2</td><td>High</td></tr>
-                                    <tr><td>Version</td><td>pom</td><td>parent-version</td><td>3.2.2</td><td>Low</td></tr>
-                                    <tr><td>Version</td><td>pom</td><td>version</td><td>3.2.2</td><td>Highest</td></tr>
-                            </table>
-                        </div>
-                        <h4 id="header4" class="subsectionheader white">Identifiers</h4>
-                        <div id="content4" class="subsectioncontent standardsubsection">
-                            <ul>
-                                    <li>pkg:maven/commons-collections/commons-collections@3.2.2
-                                    &nbsp;&nbsp;(<i>Confidence</i>:High)
-                                </li>
-                                <li><a href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aapache%3Acommons_collections%3A3.2.2%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A" target="_blank">cpe:2.3:a:apache:commons_collections:3.2.2:*:*:*:*:*:*:*</a>
-                                    &nbsp;&nbsp;(<i>Confidence</i>:Highest)
-                                &nbsp;&nbsp;<button class="copybutton" title="Generate Suppression XML for the identified vulnerability identifier" data-display-name="commons-collections-3.2.2.jar" data-sha1="8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5" data-pkgurl="pkg:maven/commons-collections/commons-collections@3.2.2" data-type-to-suppress="cpe" data-id-to-suppress="cpe:/a:apache:commons_collections">suppress</button>
-                            </li>
-                            </ul>
-                        </div>
-                </div>
-                    <h3 class="subsectionheader standardsubsection notvulnerable"><a name="l2_5b1e18bc0ad651ed878029d83f88d9c8189fd51e"></a>commons-io-2.22.0.jar</h3>
+                     <h3 class="subsectionheader standardsubsection notvulnerable"><a name="l1_5b1e18bc0ad651ed878029d83f88d9c8189fd51e"></a>commons-io-2.22.0.jar</h3>
                     <div class="subsectioncontent notvulnerable">
                             <p><b>Description:</b><pre>
 The Apache Commons IO library contains utility classes, stream implementations, file filters,
@@ -950,8 +822,8 @@ file comparators, endian transformation classes, and much more.
                                 <br/><b>Referenced In Project/Scope:</b> Calculator Application Heena:compile
                                 <br/><span class="tooltip"><span class="tooltiptext">commons-io-2.22.0.jar is in the transitive dependency tree of the listed items.</span><b>Included by:</b></span> pkg:maven/com.techwithjatin/calculator-app@0.0.1-SNAPSHOT
                         </p>
-                        <h4 id="header5" class="subsectionheader expandable expandablesubsection white">Evidence</h4>
-                        <div id="content5" class="subsectioncontent standardsubsection hidden">
+                        <h4 id="header3" class="subsectionheader expandable expandablesubsection white">Evidence</h4>
+                        <div id="content3" class="subsectioncontent standardsubsection hidden">
                             <table class="lined fullwidth" border="0">
                                 <tr><th class="left" style="width:10%;">Type</th><th class="left" style="width:10%;">Source</th><th class="left" style="width:20%;">Name</th><th class="left" style="width:50%;">Value</th><th class="left" style="width:10%;">Confidence</th></tr>
                                     <tr><td>Vendor</td><td>file</td><td>name</td><td>commons-io</td><td>High</td></tr>
@@ -1083,8 +955,8 @@ file comparators, endian transformation classes, and much more.
                                     <tr><td>Version</td><td>pom</td><td>version</td><td>2.22.0</td><td>Highest</td></tr>
                             </table>
                         </div>
-                        <h4 id="header6" class="subsectionheader white">Identifiers</h4>
-                        <div id="content6" class="subsectioncontent standardsubsection">
+                        <h4 id="header4" class="subsectionheader white">Identifiers</h4>
+                        <div id="content4" class="subsectioncontent standardsubsection">
                             <ul>
                                     <li>pkg:maven/commons-io/commons-io@2.22.0
                                     &nbsp;&nbsp;(<i>Confidence</i>:High)

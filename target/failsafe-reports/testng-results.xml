@@ -2,25 +2,25 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-31T12:37:09 IST" name="Surefire suite" finished-at="2026-10-31T12:37:09 IST" duration-ms="177">
+  <suite started-at="2026-10-31T17:30:21 IST" name="Surefire suite" finished-at="2026-10-31T17:30:21 IST" duration-ms="192">
     <groups>
       <group name="integration">
-        <method signature="CalculatorIT.calculatorIntergrationTest()[pri:0, instance:com.cal.integration.tests.CalculatorIT@54c562f7]" name="calculatorIntergrationTest" class="com.cal.integration.tests.CalculatorIT"/>
+        <method signature="CalculatorIT.calculatorIntergrationTest()[pri:0, instance:com.cal.integration.tests.CalculatorIT@753432a2]" name="calculatorIntergrationTest" class="com.cal.integration.tests.CalculatorIT"/>
       </group> <!-- integration -->
     </groups>
-    <test started-at="2026-10-31T12:37:09 IST" name="Surefire test" finished-at="2026-10-31T12:37:09 IST" duration-ms="177">
+    <test started-at="2026-10-31T17:30:21 IST" name="Surefire test" finished-at="2026-10-31T17:30:21 IST" duration-ms="192">
       <class name="com.cal.tests.DemoIT">
-        <test-method signature="dummyIntegratioTest()[pri:0, instance:com.cal.tests.DemoIT@1a04f701]" started-at="2026-10-31T12:37:09 IST" name="dummyIntegratioTest" description="Dummy IT Test" finished-at="2026-10-31T12:37:09 IST" duration-ms="2" status="PASS">
+        <test-method signature="dummyIntegratioTest()[pri:0, instance:com.cal.tests.DemoIT@1d2bd371]" started-at="2026-10-31T17:30:21 IST" name="dummyIntegratioTest" description="Dummy IT Test" finished-at="2026-10-31T17:30:21 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummyIntegratioTest -->
       </class> <!-- com.cal.tests.DemoIT -->
       <class name="com.cal.integration.tests.CalculatorIT">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.cal.integration.tests.CalculatorIT@54c562f7]" started-at="2026-10-31T12:37:09 IST" name="setup" description="Setup the Cal object and the artifact folder " finished-at="2026-10-31T12:37:09 IST" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cal.integration.tests.CalculatorIT@753432a2]" started-at="2026-10-31T17:30:21 IST" name="setup" description="Setup the Cal object and the artifact folder " finished-at="2026-10-31T17:30:21 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="calculatorIntergrationTest()[pri:0, instance:com.cal.integration.tests.CalculatorIT@54c562f7]" started-at="2026-10-31T12:37:09 IST" name="calculatorIntergrationTest" description="Verify outfile is created and the content matches as expected" finished-at="2026-10-31T12:37:09 IST" duration-ms="56" status="PASS">
+        <test-method signature="calculatorIntergrationTest()[pri:0, instance:com.cal.integration.tests.CalculatorIT@753432a2]" started-at="2026-10-31T17:30:21 IST" name="calculatorIntergrationTest" description="Verify outfile is created and the content matches as expected" finished-at="2026-10-31T17:30:21 IST" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calculatorIntergrationTest -->
